@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+header {
+    background-color:#2B2D42;
+    color:#8D99AE;
+    padding: 1rem;
+    border:2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  
+    margin: 0.5rem;
+    animation-name: head;
+    animation-duration: 4s; /* Set the duration for one cycle */
+    animation-timing-function: linear; /* Smooth animation */
+    animation-iteration-count: infinite; /* Infinite loop */
+}
+
+@keyframes head{
+    0%{border-top: 2px solid red;}
+    25%{border-left: 2px solid red;}
+    50%{border-bottom: 2px solid red;}
+    100%{border-right: 2px solid red;}
+}
+.logo{
+    display: flex;
+    
+}
+.logo img {
+    height: 80px; /* Adjust the height of the logo as needed */
+    width:100px;
+}
+.logo h3 {
+   
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    color: #edf2f4;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Default layout is row */
+}
+nav ul li {
+    margin-left: 1.5rem; /* Adjust spacing between nav items */
+}
+
+nav ul li a {
+    color: #8d99ae;
+    text-decoration: none;
+    font-size: 1.5rem;
+}   
+li a:hover{
+    background-color: black;
+    color:#edf2f4;
+    padding: 2px;
+}  
+.home{
+    margin:0.5rem;
+    border:1px solid black;
+    height:max-content;
+    padding: 0.5rem;
+    background-image: url('./static/background.jpg'); /* Path to your background image */
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    position:relative
+    
+}   
+.home-content h3{
+    font-size:x-large;
+    margin-left: 5rem;
+    color: azure;
+
+}               
+.home-content h1{
+    font-size:3rem;
+    color:#ed4444;
+    margin-left: 5rem;
+}
+.icon-link{
+    display: inline-block;
+    position: absolute;
+    left:1rem;
+    bottom:4.8rem;
+    margin-left: 11rem;
+
+}
+.icon-link i{
+    padding: 0.2rem;
+    font-size: 2rem;
+    margin-left: 0.7rem;
+    color:rgb(239, 238, 232);
+    box-shadow: 0.1rem 0.1rem 2px white;
+    
+}
+.person{
+    width:50%;
+    height: 95%;
+    margin-left: 14rem;
+    
+}
+.home-image{
+    margin-top:0%;
+
+}
+.resume{
+    font-size:1rem;
+    margin-left: 5rem;
+    background-color: rgb(16, 45, 71);
+    color: aliceblue;
+    padding:1rem;
+    width:max-content;
+    box-shadow: 0.1rem 0.1rem 2px white;
+
+}
+.btn{
+    box-shadow: 0.1rem 0.1rem 2px black;
+}
+.about,.about-box {
+    height:max-content;
+    border: 1px solid black;
+    margin:0.5rem;
+    padding:0.5rem;
+    background-color: #8D99AE;
+
+}
+.title-about ,.title-skill,.title-certificate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: x-large;
+
+
+}
+.info-section{
+    height:max-content;
+    border: 1px solid black;
+    margin:0.5rem;
+    padding:0.5rem;
+    width:100%;
+    background-color:#2B2D42;
+
+}
+.info-section p{
+    margin-left: 10rem;
+    font-size: x-large;
+    padding: 0.6rem;
+    color:#edf2f4;
+}
+.about-box{
+    display: flex;
+
+
+}
+.profile-pic{
+    height:18rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+}
+.skill-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:max-content;
+    border: 1px solid black;
+    margin:0.5rem;
+    padding:0.5rem;
+    background-color: #8D99AE;
+    gap: 0.5rem;
+    
+}
+.skill-box div{
+    
+    background-color:#2B2D42;
+}
+.title-skill{
+    grid-column: span 2;
+    border: 1px solid black;
+}
+.skill-box div img{
+    width:6rem;
+    height:min-content; 
+    margin-top: 0.7rem;
+    margin-left: 5rem;
+}
+.python,.c,.java,.html,.css,.javascript,.reactjs,.sql{
+    display: flex;
+}
+.star{
+    
+   
+    padding: 3rem;
+    margin-left: 1rem;
+    font-size: x-large;
+}
+.checked{
+    color: orange;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:max-content;
+    border: 1px solid black;
+    margin:0.5rem;
+    padding:0.5rem;
+    background-color: #8D99AE;
+    gap: 4rem;
+    
+}
+.projects div{
+    background-color: #8D99AE;
+}
+.projects .title-project{
+    grid-column: span 2;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    font-size: x-large;
+    background-color:#8D99AE;
+    
+    
+}
+.projects div img{
+    width: 100%;
+    height:15rem;
+    margin-top: 0px;
+
+}
+.project-title h2{
+    display: flex;
+    flex-wrap: wrap;
+    width:fit-content;
+}
+
+.project-des{
+    line-height: 1.6rem;
+    text-align:justify;
+}
+.project1:hover{
+    font-size:larger;
+}
+.certificate,.contactus{
+    margin:0.5rem;
+}
+.certificate-cotainer{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-top: 0.7rem;
+    padding-bottom: 2rem;
+    
+   
+}
+.ct{
+    width: 16rem;
+    height: 10rem;
+    opacity: 30%;
+}
+.ctt{
+    width: 25rem;
+    height: 19rem;
+
+}
+.left-arrow{
+    margin-left: 5rem;
+    font-size: xx-large;
+    padding: 0.3rem;
+}
+.right-arrow{
+    margin-right: 5rem;
+    font-size: xx-large;
+    padding: 0.3rem;
+}
+.certificate{
+    background-color:#2B2D42;
+}
+.contactus{
+    background-color: #8d99ae;
+    background-image: url("./static/email.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* 100% width, auto height */
+    background-position:center center;
+
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    
+}
+.contact-box ,input,h2,textarea{
+    margin-top: 0.7rem;
+    width:15rem;
+    padding: 0.3rem;
+
+}
+.input-icon {
+    position: relative;
+  }
+  
+  .input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 1rem;
+  }
+  
+  .input-icon input {
+    padding-left: 30px;
+  }
+  
+.contact-box textarea{
+    height:8rem;
+}
+.btn-msg{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width:8rem;
+    margin-left: 3.3rem;
+    color: azure;
+    background-color: #ed4444;
+}
